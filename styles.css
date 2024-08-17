@@ -103,32 +103,69 @@ section h2 {
     font-size: 2rem;
 }
 
-.skill-set {
+.skills-grid {
     display: flex;
+    gap: 2rem;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 
-.skill {
+.skills-card {
     flex: 1 1 calc(50% - 1rem);
     background: white;
-    padding: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    list-style: none;
+}
+
+.skill-item {
+    background: #f4f4f4;
+    padding: 0.5rem;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
 }
 
-.experience-item {
-    margin-bottom: 2rem;
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
-.experience-item h3 {
+.experience-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
-.experience-item h4 {
+.experience-card h4 {
     font-size: 1.2rem;
     color: #61dafb;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
 }
 
 .contact-link {
